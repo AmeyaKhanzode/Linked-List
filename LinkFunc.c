@@ -38,6 +38,8 @@ void readlink(node *head)
     while (head != NULL)
     {
         printf("%d\t",head->number);
+        node *temp = head;
         head = head->next;
+        free(temp);
     }
 }
